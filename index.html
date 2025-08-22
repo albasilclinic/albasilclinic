@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مجمع الباسل الطبي</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
-      text-align: center;
-      padding: 20px;
-      margin: 0;
-    }
-    .logo-container {
-      display: inline-block;
-      background-color: white; /* خلفية الشعار */
-      padding: 20px;
-      border-radius: 50%;      /* شكل دائري */
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* ظل */
-      margin-bottom: 10px;      /* مسافة صغيرة تحت الشعار */
-    }
-    .logo {
-      width: 290px;
-      max-width: 90%;
-      display: block;
-    }
-    .link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 80%;
-      max-width: 300px;
-      margin: 10px auto;
-      padding: 15px;
-      border-radius: 15px;
-      font-size: 1.3em;
-      font-weight: bold;
-      color: white;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* ظل للأزرار */
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .link img {
-      width: 28px;
-      height: 28px;
-      margin-left: 10px;
-    }
-    .link:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-    }
-    .whatsapp { background-color: #25D366; }
-    .snapchat { background-color: #FFFC00; color: black; }
-    .tiktok { background-color: black; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مجمع الباسل الطبي</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    background: linear-gradient(270deg, #d0ebff, #ffffff, #a0d8ff);
+    background-size: 600% 600%;
+    animation: gradientMove 15s ease infinite;
+  }
+
+  @keyframes gradientMove {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+  }
+
+  .logo {
+    width: 300px;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+
+  .link img {
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+  }
+
+  .link.snapchat img {
+    width: 30px; /* مرتين الحجم الأصلي */
+    height: 30px;
+    margin-left: 10px;
+  }
+
+  .link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+  }
+
+  .whatsapp { background-color: #25D366; }
+  .snapchat { background-color: #FFFC00; color: black; }
+  .tiktok { background-color: black; }
+
+</style>
 </head>
 <body>
 
-  <!-- شعار دائري مع ظل -->
-  <div class="logo-container">
-    <img src="logo.png" alt="شعار الباسل الطبي" class="logo">
-  </div>
+  <!-- الشعار الرسمي للباسل -->
+  <img src="logo.png" alt="شعار الباسل الطبي" class="logo">
 
   <!-- واتساب -->
   <a href="https://wa.me/966543666127" class="link whatsapp">
@@ -70,7 +81,7 @@
 
   <!-- سناب شات -->
   <a href="https://www.snapchat.com/add/albasilclinic" class="link snapchat">
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="سناب">
+    <img src="snapchat logo.png" alt="سناب">
     سناب شات
   </a>
 
